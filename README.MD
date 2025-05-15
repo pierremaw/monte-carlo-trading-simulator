@@ -69,16 +69,12 @@ Each individual trade in the selected path is listed, showing:
 
 This reveals how compounding and drawdowns evolve within a sequence.
 
----
-
 ## What’s Under the Hood?
 
 * **Randomized trade outcomes** based on the given win rate
 * **Risk and reward per trade** are percentages of the *current* equity
 * **Each simulation runs a full trade sequence** (e.g., 450 trades)
 * **Aggregated results** across simulations show overall performance distribution
-
----
 
 ## Full Script Source (`Code.gs`)
 
@@ -179,8 +175,6 @@ function refreshEquityValueIsInRange(fourHundredTradesEquityCell, minValueCell, 
   }
 }
 ```
-
----
 
 ## Why Use This Simulator?
 
