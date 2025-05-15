@@ -46,7 +46,7 @@ The simulator aggregates final account values across all runs and reports:
 
 These help provide insight on the distribution of possible outcomes—what’s typical, what’s rare, and what’s extreme.
 
-## Active Simulation Statistics
+### Active Simulation Statistics
 
 After you hit **Perform Simulation**, the sheet runs all the requested paths, then displays details for the **most recent** 450-trade path:
 
@@ -57,7 +57,7 @@ After you hit **Perform Simulation**, the sheet runs all the requested paths, th
 
 This snapshot shows exactly how one full sequence played out.
 
-## Active Simulation Trades
+### Active Simulation Trades
 
 For that latest 450-trade path, the sheet lists every trade in order, including:
 
