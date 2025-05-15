@@ -31,7 +31,7 @@ In the **Input Variables** section, if you want, you can update:
 
 After setting your inputs, just click the **“Perform Simulation”** button. The script runs the simulations, calculates summary statistics, and updates charts automatically.
 
-## What’s Under the Hood?
+## How It Works
 
 * **Randomized trade outcomes** based on the given win rate
 * **Risk and reward per trade** are percentages of the *current* equity
