@@ -76,7 +76,7 @@ For that latest 450-trade path, the sheet lists every trade in order, including:
 
 Watching these rows lets you see how compounding gains—and drawdowns—unfold in a single simulated journey.
 
-## Full Script Source (`Code.gs`)
+## Full Script Source (`Extensions/Apps Script/Code.gs`)
 
 ```javascript
 function TradeSimulator() {
