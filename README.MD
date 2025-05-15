@@ -48,24 +48,30 @@ The simulator aggregates final account values across all runs and reports:
 
 These help provide insight on the distribution of possible outcomes—what’s typical, what’s rare, and what’s extreme.
 
-### Active Simulation Statistics
+## Active Simulation Statistics
 
-You can drill down into one specific simulated path to see:
+After you hit **Perform Simulation**, the sheet runs all the requested paths, then displays details for the **most recent** 450-trade path:
 
-* Total trades simulated (e.g., 450)
-* Count of wins and losses
-* Final balance
-* Total % gain or loss
+- **Total Trades** simulated (450)  
+- **Win/Loss Count** and win percentage for that run  
+- **Ending Balance**  
+- **Overall % Gain or Loss** relative to your starting equity  
 
-### Active Simulation Trades
+This snapshot shows exactly how one full sequence played out.
 
-Each individual trade in the selected path is listed, showing:
+---
 
-* Trade result (Win or Loss)
-* Account size after that trade
-* % gain from the original starting equity
+## Active Simulation Trades
 
-This reveals how compounding and drawdowns evolve within a sequence.
+For that latest 450-trade path, the sheet lists every trade in order, including:
+
+1. **Result** (Win / Loss)  
+2. **Account Size** immediately after the trade  
+3. **% Change** from the original starting balance  
+
+Watching these rows lets you see how compounding gains—and painful drawdowns—unfold in a single simulated journey.
+
+**Note:** Each time you click **Perform Simulation**, the sheet recalculates all paths but only surfaces the statistics and trade-by-trade details of the **last** simulation it ran.  
 
 ## What’s Under the Hood?
 
