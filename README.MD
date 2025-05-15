@@ -15,8 +15,7 @@ A Google Sheets–based Monte Carlo trading simulator that lets you model thousa
   - Simulation count  
 
 - **Monte Carlo simulations**  
-  - Runs _N_ independent equity‐curve simulations of a fixed trade sequence (e.g. 100 or 450 trades).  
-  - Automatically retries any out‐of‐bounds equity results until they fall within the specified min/max envelope.
+  - Runs _N_ independent equity‐curve simulations of a fixed trade sequence (450 trades).  
 
 - **Summary statistics**  
   - Expected value (mean)  
