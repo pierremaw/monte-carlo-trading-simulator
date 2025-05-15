@@ -172,6 +172,6 @@ function refreshEquityValueIsInRange(fourHundredTradesEquityCell, minValueCell, 
 }
 ```
 
-## Why Use This Simulator?
+## Why Did I Create This Simulator?
 
-Monte Carlo simulations help you visualize how randomness and edge interact in trading. Even with a positive expected return, variance can produce losing stretches. By running hundreds or thousands of simulations, you can measure the risks of ruin, the potential for windfall gains, and the range of outcomes you’re statistically likely to see. This makes the tool not only educational, but vital for serious risk management.
+Monte Carlo simulations help visualize how randomness and edge interact in trading. Even with a positive expected return, variance can produce losing stretches. By running simulations, you can visualize the potential for gains, and the range of outcomes you’re statistically likely to see.
