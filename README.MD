@@ -2,15 +2,11 @@
 
 This project features a **Monte Carlo Trading Simulator** created within a Google Sheet document. It models how a simple fixed-fraction trading strategy can cause a trading account to grow or shrink over many random sequences. You can tweak your risk assumptions, observe probabilistic outcomes, and analyze how compounding and volatility affect long-term results.
 
----
-
 ## Features and Capabilities
 
 This simulator allows full user control over trade assumptions and simulates random sequences of wins and losses based on your estimated win rate. Each simulation models a complete sequence of trades and records the resulting ending balance. Once all simulations are complete, it reports statistical summaries (mean, median, quartiles, standard deviation, min, max) and overlays equity curves for visual insight into performance dispersion.
 
 The key benefit: even if your system has a mathematical edge, variance can still produce significant short-term drawdowns—or outsized gains. By visualizing this, you gain a realistic perspective on strategy risk.
-
----
 
 ## Quick Start
 
@@ -38,8 +34,6 @@ The simulator recalculates risk/reward as percentages of your *current* account,
 ### 3. Click “Perform Simulation”
 
 After setting your inputs, just click the **“Perform Simulation”** button. The script runs the simulations, calculates summary statistics, and updates charts automatically.
-
----
 
 ## Spreadsheet Sections
 
