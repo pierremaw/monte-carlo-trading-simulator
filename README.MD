@@ -4,9 +4,7 @@ This project features a **Monte Carlo Trading Simulator** created within a Googl
 
 ## Features and Capabilities
 
-This simulator allows full user control over trade assumptions and simulates random sequences of wins and losses based on your estimated win rate. Each simulation models a complete sequence of trades and records the resulting ending balance. Once all simulations are complete, it reports statistical summaries (mean, median, quartiles, standard deviation, min, max) and overlays equity curves for visual insight into performance dispersion.
-
-The key benefit: even if your system has a mathematical edge, variance can still produce significant short-term drawdowns—or outsized gains. By visualizing this, you gain a realistic perspective on strategy risk.
+This simulator allows full user control over trade assumptions and simulates random sequences of wins and losses based on your estimated win rate. Each simulation models a complete sequence of trades and records the resulting ending balance. Once all simulations are complete, it reports statistical summaries (mean, median, quartiles, standard deviation, min, max) for the set of simulations that were performed.
 
 ## Quick Start
 
