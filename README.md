@@ -1,6 +1,6 @@
 # Monte Carlo Trading Simulator for Google Sheets
 
-
+https://github.com/user-attachments/assets/a379e21c-1924-41cb-b9ea-fccf72632510
 
 This project features a **Monte Carlo Trading Simulator** created within a Google Sheet document. It models how a simple fixed-fraction trading strategy can cause a trading account to grow or shrink over many random sequences. You can tweak your risk assumptions, observe probabilistic outcomes, and analyze how compounding and volatility affect long-term results.
 
