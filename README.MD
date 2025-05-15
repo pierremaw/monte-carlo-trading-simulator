@@ -16,11 +16,9 @@ Click the link below and duplicate the simulator to your own Google Drive:
 
 [**→ Copy This Google Sheet**](https://docs.google.com/spreadsheets/d/1llfX-jLt7N-dviIor4SKhrk3zuYnIL6PwtTl-bU366w/edit?gid=1990509670#gid=1990509670)
 
-Then go to **File → Make a copy…**.
-
 ### 2. Update Parameters
 
-In the **Input Variables** section, set:
+In the **Input Variables** section, if you want, you can update:
 
 * **Account Start** – e.g., \$5,000
 * **Risk % Per Trade** – how much you risk per trade (e.g., 1%)
