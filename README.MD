@@ -59,8 +59,6 @@ After you hit **Perform Simulation**, the sheet runs all the requested paths, th
 
 This snapshot shows exactly how one full sequence played out.
 
----
-
 ## Active Simulation Trades
 
 For that latest 450-trade path, the sheet lists every trade in order, including:
@@ -69,9 +67,7 @@ For that latest 450-trade path, the sheet lists every trade in order, including:
 2. **Account Size** immediately after the trade  
 3. **% Change** from the original starting balance  
 
-Watching these rows lets you see how compounding gains—and painful drawdowns—unfold in a single simulated journey.
-
-**Note:** Each time you click **Perform Simulation**, the sheet recalculates all paths but only surfaces the statistics and trade-by-trade details of the **last** simulation it ran.  
+Watching these rows lets you see how compounding gains—and drawdowns—unfold in a single simulated journey.
 
 ## What’s Under the Hood?
 
