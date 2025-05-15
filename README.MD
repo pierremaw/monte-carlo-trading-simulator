@@ -27,8 +27,6 @@ In the **Input Variables** section, if you want, you can update:
 * **Estimated Win Rate** – e.g., 41%
 * **Simulation Count** – number of trade paths to simulate (e.g., 111)
 
-The simulator recalculates risk/reward as percentages of your *current* account, not your starting balance.
-
 ### 3. Click “Perform Simulation”
 
 After setting your inputs, just click the **“Perform Simulation”** button. The script runs the simulations, calculates summary statistics, and updates charts automatically.
