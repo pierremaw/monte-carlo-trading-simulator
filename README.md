@@ -31,6 +31,13 @@ In the **Input Variables** section, if you want, you can update:
 
 After setting your inputs, just click the **“Perform Simulation”** button. The script runs the simulations, calculates summary statistics, and updates charts automatically.
 
+## What’s Under the Hood?
+
+* **Randomized trade outcomes** based on the given win rate
+* **Risk and reward per trade** are percentages of the *current* equity
+* **Each simulation runs a full trade sequence** (e.g., 450 trades)
+* **Aggregated results** across simulations show overall performance distribution
+
 ## Spreadsheet Sections
 
 ### Input Variables
@@ -68,13 +75,6 @@ For that latest 450-trade path, the sheet lists every trade in order, including:
 3. **% Change** from the original starting balance  
 
 Watching these rows lets you see how compounding gains—and drawdowns—unfold in a single simulated journey.
-
-## What’s Under the Hood?
-
-* **Randomized trade outcomes** based on the given win rate
-* **Risk and reward per trade** are percentages of the *current* equity
-* **Each simulation runs a full trade sequence** (e.g., 450 trades)
-* **Aggregated results** across simulations show overall performance distribution
 
 ## Full Script Source (`Code.gs`)
 
