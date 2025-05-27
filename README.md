@@ -1,84 +1,85 @@
 # Monte Carlo Trading Simulator for Google Sheets
 
-https://github.com/user-attachments/assets/a379e21c-1924-41cb-b9ea-fccf72632510
+[https://github.com/user-attachments/assets/a379e21c-1924-41cb-b9ea-fccf72632510](https://github.com/user-attachments/assets/a379e21c-1924-41cb-b9ea-fccf72632510)
 
-This project features a **Monte Carlo Trading Simulator** created within a Google Sheet document. It models how a simple fixed-fraction trading strategy can cause a trading account to grow or shrink over many random sequences. You can tweak your risk assumptions, observe probabilistic outcomes, and analyze how compounding and volatility affect long-term results.
+The **Monte Carlo Trading Simulator** is a dynamic Google Sheets tool designed to model the performance of a fixed-fraction trading strategy across many randomized trade sequences. By simulating hundreds of possible outcomes based on your inputs—such as win rate and risk per trade—it reveals how probability, compounding, and variance shape the long-term trajectory of a trading account.
 
-Monte Carlo simulations help visualize how randomness and edge interact in trading. Even with a positive expected return, variance can produce losing stretches. By running simulations, you can visualize the potential for gains/losses and what is statistically likely to happen based on specific input variables.
+This simulator provides a practical demonstration of how randomness and edge interact in trading systems. Even strategies with a positive expected return can experience significant drawdowns due to variance. Monte Carlo simulations help you visualize this uncertainty and quantify the statistical expectations of a given trading setup.
 
-## Functionality
+## Features
 
-This simulator allows full user control over trade assumptions and simulates random sequences of wins and losses based on your estimated win rate. Each simulation models a complete sequence of trades and records the resulting ending balance. Once all simulations are complete, it reports statistical summaries (mean, median, quartiles, standard deviation, min, max) for the set of simulations that were performed.
+This simulator gives you full control over key trading assumptions and simulates thousands of trade sequences. For each run, it calculates and stores the final equity value. Once all simulations are complete, it compiles comprehensive statistical summaries including mean, median, quartiles, and standard deviation. The simulator updates both summary metrics and visual charts in real time.
 
-## Quick Start
+## Getting Started
 
-### 1. Copy the Simulator Sheet
+### 1. Copy the Simulator
 
-Click the link below and duplicate the simulator to your own Google Drive:
+Begin by duplicating the simulator to your own Google Drive:
 
 [**→ Copy This Google Sheet**](https://docs.google.com/spreadsheets/d/1llfX-jLt7N-dviIor4SKhrk3zuYnIL6PwtTl-bU366w/edit?gid=1990509670#gid=1990509670)
 
-### 2. Update Parameters
+### 2. Configure Your Parameters
 
-In the **Input Variables** section, if you want, you can update:
+In the **Input Variables** section, enter your desired simulation settings:
 
-* **Account Start** – e.g., \$5,000
-* **Risk % Per Trade** – how much you risk per trade (e.g., 1%)
-* **Reward % Per Trade** – how much you win on a successful trade (e.g., 5%)
-* **Reward/Risk Ratio** – automatically calculated
-* **Estimated Win Rate** – e.g., 41%
-* **Simulation Count** – number of trade paths to simulate (e.g., 111)
+* **Account Start**: Starting balance (e.g., \$5,000)
+* **Risk % Per Trade**: Percentage of equity risked per trade (e.g., 1%)
+* **Reward % Per Trade**: Percentage gained per winning trade (e.g., 5%)
+* **Estimated Win Rate**: Probability of a trade being successful (e.g., 41%)
+* **Simulation Count**: Number of full trade sequences to run (e.g., 111)
 
-### 3. Click “Perform Simulation”
+### 3. Run the Simulation
 
-After setting your inputs, just click the **“Perform Simulation”** button. The script runs the simulations, calculates summary statistics, and updates charts automatically.
+Click the **“Perform Simulation”** button. The Google Apps Script backend will simulate the specified number of trade paths, compute summary statistics, and update the associated charts and tables.
 
 ## How It Works
 
-* **Randomized trade outcomes** based on the given win rate
-* **Risk and reward per trade** are percentages of the *current* equity
-* **Each simulation runs a full trade sequence** (e.g., 450 trades)
-* **Aggregated results** across simulations show overall performance distribution
+Each simulation involves a random sequence of trade outcomes based on your defined win rate. Each trade adjusts the equity based on current size, applying your defined reward and risk parameters. A single simulation might contain, for instance, 450 trades, capturing the compounding impact of gains and drawdowns.
 
-## Spreadsheet Sections
+After running all simulations, the system aggregates the final results and calculates the statistical distribution of potential account outcomes. This reveals both the typical and extreme trajectories under your chosen strategy.
+
+## Spreadsheet Overview
 
 ### Input Variables
 
-You define the base conditions of your trading model: starting balance, risk, reward, win rate, and the number of simulations.
+This section captures the foundational assumptions of the trading model. You specify starting capital, trade risk/reward percentages, estimated win rate, and how many simulations to perform.
 
 ### Summary Statistics
 
-The simulator aggregates final account values across all runs and reports:
+After all simulations are complete, the spreadsheet reports key distribution metrics across the simulated outcomes:
 
 * **Expected Value (Mean)**
 * **Median, Q1, Q3**
-* **Minimum and Maximum Outcomes**
+* **Minimum and Maximum Values**
 * **Standard Deviation**
 
-These help provide insight on the distribution of possible outcomes—what’s typical, what’s rare, and what’s extreme.
+These statistics help quantify the central tendency and spread of possible final outcomes, providing context for risk and reward expectations.
 
-### Active Simulation Statistics
+### Active Simulation Summary
 
-After you hit **Perform Simulation**, the sheet runs all the requested paths, then displays details for the **most recent** 450-trade path:
+For the most recent trade path (typically 450 trades), the simulator displays:
 
-- **Total Trades** simulated (450)  
-- **Win/Loss Count** and win percentage for that run  
-- **Ending Balance**  
-- **Overall % Gain or Loss** relative to your starting equity  
+* **Number of Trades Simulated**
+* **Count of Wins and Losses**
+* **Win Percentage**
+* **Final Account Balance**
+* **Net % Gain or Loss**
 
-This snapshot shows exactly how one full sequence played out.
+This provides a detailed look at a single example of how a trade sequence could play out under your inputs.
 
-### Active Simulation Trades
+### Trade-by-Trade Breakdown
 
-For that latest 450-trade path, the sheet lists every trade in order, including:
+The simulator also lists every trade in the most recent simulation path:
 
-1. **Result** (Win / Loss)  
-2. **Account Size** immediately after the trade  
-3. **% Change** from the original starting balance  
+* **Trade Outcome**: Win or Loss
+* **Equity After Each Trade**
+* **Cumulative % Change from Start**
 
-Watching these rows lets you see how compounding gains—and drawdowns—unfold in a single simulated journey.
+This granular view makes it easy to observe how streaks, volatility, and compounding play out over a sequence.
 
-## Full Script Source (`Extensions/Apps Script/Code.gs`)
+## Apps Script Backend
+
+The core functionality is implemented using Google Apps Script. Here is the source code for the backend logic found under `Extensions > Apps Script > Code.gs`:
 
 ```javascript
 function TradeSimulator() {
@@ -175,3 +176,5 @@ function refreshEquityValueIsInRange(fourHundredTradesEquityCell, minValueCell, 
   }
 }
 ```
+
+This backend ensures smooth automation, accurate results, and real-time updates to your spreadsheet's UI.
