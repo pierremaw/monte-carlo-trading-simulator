@@ -34,7 +34,7 @@ Click the **“Perform Simulation”** button. The Google Apps Script backend wi
 
 ## How It Works
 
-Each simulation involves a random sequence of trade outcomes based on your defined win rate. Each trade adjusts the equity based on current size, applying your defined reward and risk parameters. A single simulation might contain, for instance, 450 trades, capturing the compounding impact of gains and drawdowns.
+Each simulation involves a random sequence of trade outcomes based on your defined win rate. Each trade adjusts the equity based on current size, applying your defined reward and risk parameters. A single simulation might contains 450 trades, capturing the compounding impact of gains and drawdowns.
 
 After running all simulations, the system aggregates the final results and calculates the statistical distribution of potential account outcomes. This reveals both the typical and extreme trajectories under your chosen strategy.
 
