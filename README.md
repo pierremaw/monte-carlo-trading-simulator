@@ -177,4 +177,4 @@ function refreshEquityValueIsInRange(fourHundredTradesEquityCell, minValueCell, 
 }
 ```
 
-This backend ensures smooth automation, accurate results, and real-time updates to your spreadsheet's UI.
+This backend ensures smooth automation, accurate results, and real-time updates to the spreadsheet's UI.
